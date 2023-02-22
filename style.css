@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.painting-container {
+  position: absolute;
+  left: -100%;
+  top: -100%;
+  width: 200%;
+  height: 200%;
+}
+
+.painting {
+  border-radius: 5px;
+  position: absolute;
+}
+
+.painting > img {
+  width: 100%;
+  border-radius: inherit;
+  vertical-align: middle;
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
+.painting:hover > img {
+  opacity: 1;
+}
+
+p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-transform: uppercase;
+  font-family: "Special Elite", monospace;
+  font-weight: 700;
+}
